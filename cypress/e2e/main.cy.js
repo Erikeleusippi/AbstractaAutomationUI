@@ -14,7 +14,7 @@ describe('Parte 1', () => {
     cy.visit('https://www.demoblaze.com/');
   });
 
-  it('Recorre productos, guarda los datos en arrays y los escribe en un .txt', () => {
+  it('Parte 1', () => {
     const procesarPagina = () => {
       home.getAllProducts(locators.homePageLocators.productsItem).then(($items) => {
         const total = $items.length;
